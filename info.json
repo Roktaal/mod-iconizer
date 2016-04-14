@@ -1,0 +1,10 @@
+{
+  "name": "mod-iconizer",
+  "version": "1.0.0",
+  "title": "Mod Iconizer",
+  "author": "Roktaal",
+  "homepage": "https://github.com/Roktaal/mod-iconizer",
+  "contact": "roktaal@gmail.com",
+  "description": "Replaces various mod buttons that have text with buttons that have icons",
+  "dependencies": ["base >= 0.12.29"]
+}
