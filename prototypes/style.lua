@@ -232,3 +232,59 @@ data.raw["gui-style"].default["mod-iconizer_research_Q"] =
 		volume = 1
 	}
 }
+
+data.raw["gui-style"].default["mod-iconizer_ion-cannon-button"] =
+{
+    type = "button_style",
+    parent = "button_style",
+    width = 36,
+    height = 36,
+    top_padding = 6,
+    right_padding = 0,
+    bottom_padding = 0,
+    left_padding = 0,
+    font = "mod-iconizer_font",
+    default_graphical_set =
+    {
+        type = "monolith",
+        monolith_image =
+        {
+            filename = "__mod-iconizer__/graphics/mod-iconizer_ion-cannon-button.png",
+            priority = "extra-high-no-scale",
+            width = 64,
+            height = 64,
+			x = 0,
+			y = 0,
+        }
+    },
+    hovered_graphical_set =
+    {
+        type = "monolith",
+        monolith_image =
+        {
+            filename = "__mod-iconizer__/graphics/mod-iconizer_ion-cannon-button.png",
+            priority = "extra-high-no-scale",
+            width = 64,
+            height = 64,
+			x = 64,
+			y = 0,
+        }
+    },
+    clicked_graphical_set =
+    {
+        type = "monolith",
+        monolith_image =
+        {
+            filename = "__mod-iconizer__/graphics/mod-iconizer_ion-cannon-button.png",
+            width = 64,
+            height = 64,
+			x = 64,
+			y = 0,
+        }
+    },
+	left_click_sound =
+	{
+		filename = "__core__/sound/gui-click.ogg",
+		volume = 1
+	}
+}

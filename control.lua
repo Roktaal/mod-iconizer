@@ -6,6 +6,7 @@ local buttons = {
 	["blueprintTools"] = true,
 	["toggleTrainInfo"] = true,
 	["research_Q"] = true,
+	["ion-cannon-button"] = true,
 }
 
 local flows = {
@@ -21,7 +22,7 @@ local technologies = {
 function doButtons(player_index, research_name)
 	local player = game.players[player_index]
 	local modlist = player.gui.top.children_names
-	
+
 	for i = 1, #modlist do
 		if flows[modlist[i]] then
 			buttonName = flows[modlist[i]]
@@ -53,7 +54,7 @@ function doButtons(player_index, research_name)
 	end
 end
 
-script.on_event(defines.events.on_gui_click, function(event) 
+script.on_event(defines.events.on_gui_click, function(event)
 	local element = event.element
 	local player = game.get_player(event.player_index)
 	if buttons[element.name] then
