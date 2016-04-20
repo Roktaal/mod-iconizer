@@ -51,7 +51,7 @@ script.on_event(defines.events.on_gui_click, function(event)
 	if buttons[element.name] then
 		player.gui.top[element.name].caption = ""
 		player.gui.top[element.name].style = "mod-iconizer_" .. element.name
-	elseif buttons[element.parent.name] and buttons[element.parent.name].name == element.name then
+	elseif element.parent and buttons[element.parent.name] and buttons[element.parent.name].name == element.name then
 		player.gui.top[element.parent.name][element.name].caption = ""
 		player.gui.top[element.parent.name][element.name].style = "mod-iconizer_" .. element.name
 	end

@@ -14,8 +14,8 @@ for _, button in pairs(buttons) do
 	{
 		type = "button_style",
 		parent = "button_style",
-		width = 34,
-		height = 34,
+		width = 36,
+		height = 36,
 		top_padding = 6,
 		right_padding = 0,
 		bottom_padding = 0,
